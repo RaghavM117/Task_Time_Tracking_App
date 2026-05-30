@@ -53,6 +53,18 @@ The project was designed with scalability, maintainability, and secure user data
 
 ---
 
+## 🔐 Authentication Flow
+
+### Local Authentication
+
+`User Registration/Login` → `Credential Validation` → `Password Verification (bcrypt)` → `JWT Access Token Generation` → `Refresh Token Generation` → `Refresh Token Stored in DB` → `httpOnly Cookies`
+
+### GitHub OAuth Authentication
+
+`GitHub Auth Request` → `GitHub User Auth` → `Passport Verification` → `User Creation/Linking` → `JWT Generation` → `Cookie Storage` → `Frontend Redirect`
+
+---
+
 ## 📂 Project Structure
 
 ```
@@ -326,7 +338,7 @@ Planned Improvements:
 ## 📄 License
 
 This project is licensed under the MIT License.
-  
+
 See the [LICENSE](./LICENSE) file for details.
 
 
