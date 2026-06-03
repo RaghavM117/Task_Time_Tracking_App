@@ -12,7 +12,10 @@ export const sendAuthToken = async (
         const user = req.user as PrismaUser;
 
         const accessToken = await signAccessToken(user.id);
-        const refreshToken = await signRefreshToken(user.id);
+        const refreshToken = await signRefreshToken(
+            user.id,
+            user.refreshTokenVersion,
+        );
 
         // store refreshToken in DB
         await prisma.user.update({

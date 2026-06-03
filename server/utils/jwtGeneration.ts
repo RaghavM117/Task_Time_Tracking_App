@@ -11,9 +11,9 @@ export const signAccessToken = async (userId: string) => {
     return jwt.sign({ id: userId }, accessToken, { expiresIn: "30m" });
 };
 
-export const signRefreshToken = async (userId: string) => {
+export const signRefreshToken = async (userId: string, version: number) => {
     if (!refreshToken) {
         throw createHttpError(500, "Refresh Token Not Found");
     }
-    return jwt.sign({ id: userId }, refreshToken, { expiresIn: "7d" });
+    return jwt.sign({ id: userId, version }, refreshToken, { expiresIn: "7d" });
 };
