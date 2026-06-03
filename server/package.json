@@ -28,7 +28,9 @@
         "passport-github2": "^0.1.12",
         "pg": "^8.21.0",
         "prisma": "^7.8.0",
-        "zod": "^4.4.3"
+        "zod": "^4.4.3",
+        "tsx": "^4.22.3",
+        "typescript": "^6.0.3"
     },
     "devDependencies": {
         "@types/colors": "^1.1.3",
@@ -38,8 +40,6 @@
         "@types/express-session": "^1.19.0",
         "@types/node": "^25.9.1",
         "@types/passport": "^1.0.17",
-        "@types/passport-github2": "^1.2.9",
-        "tsx": "^4.22.3",
-        "typescript": "^6.0.3"
+        "@types/passport-github2": "^1.2.9"
     }
 }
