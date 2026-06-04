@@ -1,5 +1,7 @@
 # Task_Time_Tracking_API
 
+🚀 **Live Api:** https://task-tracking-api.onrender.com
+
 A productivity-focused task management backend built with TypeScript, Express, PostgreSQL, and Prisma.
 
 The platform allows users to securely manage tasks, track time spent on individual activities through session-based timers, and generate daily productivity summaries. Authentication is handled through JWT-based access and refresh tokens with support for GitHub OAuth.
@@ -340,7 +342,3 @@ Planned Improvements:
 This project is licensed under the MIT License.
 
 See the [LICENSE](./LICENSE) file for details.
-
-
-
-
